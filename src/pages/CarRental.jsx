@@ -41,7 +41,10 @@ const CarRental = () => {
     setSelectedStatus(e.target.value);
     setPageNumber(0); // Reset page number when changing status filter
   };
-
+  // const handleStatusChange = e => {
+  //   setSelectedStatus(e.target.value);
+  //   setPageNumber(0); // Reset page number when changing status filter
+  // };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [carData]);
