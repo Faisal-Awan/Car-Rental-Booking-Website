@@ -9,6 +9,7 @@ import CarRental from '../pages/CarRental';
 import CarBooking from '../pages/CarBooking';
 import Products from '../pages/Products';
 import ProductDetails from '../pages/ProductDetails';
+import PersonDetail from '../pages/PersonDetail'
 
 import Checkout from '../pages/Checkout';
 import Blogs from '../pages/Blogs';
@@ -17,6 +18,11 @@ import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import RentalList from '../pages/RentList';
+import AddCarForm from '../pages/AddCars';
+import UpdateRentalForm from '../pages/UpdateRental';
+import CarList from '../pages/CarList';
+import CarUpdate from '../pages/UpdateCar';
 
 const routes = () => {
   return (
@@ -38,6 +44,17 @@ const routes = () => {
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/contact" element={<Contact />} />
+
+      <Route path="/personDetail/:carId" element={<PersonDetail />} />
+      <Route path="/rentalList" element={<RentalList />} />
+      <Route path="/carList" element={<CarList />} />
+      <Route path="/addCars" element={<AddCarForm />} />
+      {/* <Route path="/updateRental/:id" element={<UpdateRentalForm />} /> */}
+      <Route path="/updateRental/:CarId" element={<UpdateRentalForm />} />
+      <Route path="/updateCar/:id" element={<CarUpdate />} />
+
+
+      
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

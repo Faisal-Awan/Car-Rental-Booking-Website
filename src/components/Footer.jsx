@@ -108,7 +108,7 @@ const Footer = () => {
               <div className="footer__bottom">
                 <p className="section__description pt-4 fw-bold text-center d-flex align-items-center justify-content-center gap-1">
                   <i class="ri-copyright-line"></i> Copyright 2022, developed by
-                  <span>Muhibur Rahman</span>. All Rights Reserved
+                  <span>Faisal Awan</span>. All Rights Reserved
                 </p>
               </div>
             </Col>

@@ -25,7 +25,14 @@ const NAV__MENU = [
     text: 'Car Listing',
     path: '/car-listing',
   },
-
+  {
+    text: 'Rent Listing',
+    path: '/rentalList',
+  },
+  {
+    text: 'Car Listing',
+    path: '/carList',
+  },
   {
     text: 'Shop',
     path: '/products',
@@ -61,7 +68,7 @@ const Header = () => {
               <div className="header__top-left">
                 <span>Need Help?</span>
                 <span className="header__top-help">
-                  <i class="ri-phone-fill"></i> Call: +321 123 45 978
+                  <i class="ri-phone-fill"></i> Call: +92312 4670431
                 </span>
               </div>
             </Col>
@@ -89,7 +96,8 @@ const Header = () => {
                   <Link to="/home">
                     <i class="ri-car-line"></i>{' '}
                     <span>
-                      Rent Car <br /> Service
+                      {/* Rent Car <br /> Service */}
+                      Rent Car Service
                     </span>
                   </Link>
                 </h1>
@@ -97,7 +105,7 @@ const Header = () => {
             </Col>
 
             <Col lg="3" md="3" sm="4">
-              <div className="header__location">
+              {/* <div className="header__location">
                 <span>
                   <i class="ri-earth-line"></i>
                 </span>
@@ -105,11 +113,11 @@ const Header = () => {
                   <h4> Bangladesh</h4>
                   <h6>Sylhet City, Bangladesh</h6>
                 </div>
-              </div>
+              </div> */}
             </Col>
 
             <Col lg="3" md="3" sm="4">
-              <div className="header__location">
+              {/* <div className="header__location">
                 <span>
                   <i class="ri-time-line"></i>
                 </span>
@@ -117,7 +125,7 @@ const Header = () => {
                   <h4>Sunday to Friday</h4>
                   <h6>10am - 7pm</h6>
                 </div>
-              </div>
+              </div> */}
             </Col>
 
             <Col
